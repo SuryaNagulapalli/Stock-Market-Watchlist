@@ -1,0 +1,126 @@
+.alerts-page {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    padding: 1rem;
+  }
+  
+  .alerts-container, .alert-form-container {
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    padding: 1.5rem;
+  }
+  
+  .alerts-container h2, .alert-form-container h3 {
+    margin-top: 0;
+    color: #1a1a2e;
+  }
+  
+  .alerts-list ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .alert-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    border-bottom: 1px solid #eee;
+  }
+  
+  .alert-item.triggered {
+    background-color: #fff8f8;
+  }
+  
+  .alert-info {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+  
+  .alert-symbol {
+    font-weight: 600;
+    color: #1a1a2e;
+  }
+  
+  .alert-condition {
+    color: #666;
+  }
+  
+  .alert-status {
+    background-color: #f72585;
+    color: white;
+    padding: 0.25rem 0.5rem;
+    border-radius: 4px;
+    font-size: 0.8rem;
+  }
+  
+  .remove-alert-btn {
+    background: none;
+    border: 1px solid #f72585;
+    color: #f72585;
+    padding: 0.25rem 0.5rem;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.3s;
+  }
+  
+  .remove-alert-btn:hover {
+    background-color: #f72585;
+    color: white;
+  }
+  
+  .alert-form .form-group {
+    margin-bottom: 1rem;
+  }
+  
+  .alert-form label {
+    display: block;
+    margin-bottom: 0.5rem;
+    color: #4a4a4a;
+    font-weight: 500;
+  }
+  
+  .alert-form input, .alert-form select {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+  }
+  
+  .add-alert-btn {
+    width: 100%;
+    padding: 0.75rem;
+    background-color: #4361ee;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: 500;
+    transition: background-color 0.3s;
+  }
+  
+  .add-alert-btn:hover {
+    background-color: #3a56d4;
+  }
+  
+  .no-alerts {
+    color: #666;
+    text-align: center;
+    padding: 1rem;
+  }
+  
+  .loading {
+    text-align: center;
+    padding: 2rem;
+    color: #666;
+  }
+  
+  @media (max-width: 768px) {
+    .alerts-page {
+      grid-template-columns: 1fr;
+    }
+  }

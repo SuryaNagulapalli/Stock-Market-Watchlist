@@ -1,0 +1,109 @@
+.stock-list-container {
+    padding: 1rem;
+  }
+  
+  .stock-list-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.5rem;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+  
+  .stock-list-header h2 {
+    margin: 0;
+    color: #1a1a2e;
+  }
+  
+  .stock-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 1.5rem;
+  }
+  
+  .stock-card {
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    padding: 1.5rem;
+    transition: transform 0.2s, box-shadow 0.2s;
+  }
+  
+  .stock-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  }
+  
+  .stock-info {
+    margin-bottom: 1rem;
+  }
+  
+  .stock-symbol {
+    margin: 0 0 0.25rem 0;
+    font-size: 1.25rem;
+    color: #1a1a2e;
+  }
+  
+  .stock-name {
+    margin: 0;
+    color: #666;
+    font-size: 0.9rem;
+  }
+  
+  .stock-price {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1rem;
+  }
+  
+  .price {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #1a1a2e;
+  }
+  
+  .change {
+    font-size: 0.9rem;
+  }
+  
+  .change.positive {
+    color: #4cc9f0;
+  }
+  
+  .change.negative {
+    color: #f72585;
+  }
+  
+  .remove-btn {
+    width: 100%;
+    padding: 0.5rem;
+    background-color: #f72585;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: 500;
+    transition: background-color 0.3s;
+  }
+  
+  .remove-btn:hover {
+    background-color: #b5179e;
+  }
+  
+  .loading {
+    text-align: center;
+    padding: 2rem;
+    color: #666;
+  }
+  
+  @media (max-width: 768px) {
+    .stock-list-header {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+    
+    .stock-grid {
+      grid-template-columns: 1fr;
+    }
+  }
